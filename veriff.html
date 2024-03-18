@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Veriff</title>
+    <meta name="description" content="Contact Veriff for fast decisions, simple experience, and more conversions. Fill out the form and reach out to us now.">
+    <meta name="keywords" content="Veriff, contact, fast decisions, simple experience, conversions, form">
+    <link rel="stylesheet" href="veriff.css">
+    <!-- Include intl-tel-input CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <img src="https://veriff.cdn.prismic.io/veriff/1565ec7d-5815-4d28-ac00-5094d1714d4c_Logo.svg" alt="Veriff Logo">
+    </div>
+    <section class="form">
+        <h1>Contact us</h1>
+        <div class="form-container">
+            <div class="form-submit">
+                <form>
+                    <div class="form-input-container">
+                        <label for="name">Name and Lastname</label>
+                        <input type="text" id="name" name="name" value="" placeholder="Name Lastname">
+                    </div>
+                    <div class="form-input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="" placeholder="name@company.com">
+                    </div>
+                    <div class="form-input-container">
+                        <label for="country">Select your country</label>
+                        <select name="country" id="country">
+                            <option value="" disabled selected>Select an option</option>
+                        </select>
+                    </div>  
+                    <div class="form-input-container">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" value="" placeholder="+337878787" class="phone-input">
+                    </div>
+                    <div class="form-input-container">
+                        <label for="service">Select a service</label>
+                        <select name="service" id="service">
+                            <option value="" disabled selected>Select an option</option>
+                        </select>
+                    </div>                    
+                    <input class="submit-button" type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="https://images.prismic.io/veriff/62045437-556c-4eb5-b79c-137eb52f7257_Neobank-industry.jpg" alt="Neobank industry">
+            </div>
+        </div>
+    </section>
+    <section class="benefits">
+        <div class="row">
+            <div class="column">
+                <img src="https://veriff.cdn.prismic.io/veriff/c9b8d317-aea3-415c-8c6b-08a307b40da9_Veriff-Homepage-Fast+Decisions.svg" alt="Fast Decisions">
+                <h2>Fast decisions</h2>
+                <p>A 98% check automation rate gets customers through in about 6 seconds.</p>
+            </div>
+            <div class="column">
+                <img src="https://veriff.cdn.prismic.io/veriff/5baf431c-843a-456c-bb4f-90696b455d5d_Veriff-Homepage-Simple+Experience.svg" alt="Simple Experience">
+                <h2>Simple experience</h2>
+                <p>Real-time end user feedback and fewer steps gets 95% of users through on the first try.</p>
+            </div>
+            <div class="column">
+                <img src="https://veriff.cdn.prismic.io/veriff/dd70148b-98ee-462b-8148-82edd843a5dc_Veriff-Homepage-Increase+Conversions.svg" alt="Increase Conversions">
+                <h2>More conversions</h2>
+                <p>Up to 30% more customer conversions with superior accuracy and user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include intl-tel-input JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+    <script src="veriff.js"></script>
+</body>
+</html>

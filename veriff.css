@@ -1,0 +1,152 @@
+:root {
+    --main-bg-color: #ffffff;
+    --main-text-color: #11615C;
+    --placeholder-color: #b2c2c2;
+    --button-bg-color: #11615c;
+    --button-border-color: #11615C;
+    --button-hover-bg-color: #00B4AA;
+    --button-hover-border-color: #00B4AA;
+    --border-color: #11615C;
+    --main-font-family: "Poppins", sans-serif;
+    --heading-font-size: 2rem;
+    --input-font-size: 1rem;
+    --button-font-size: 1rem;
+    --column-max-width: 25%;
+}
+
+body {
+    font-family: var(--main-font-family);
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: start;
+}
+
+.form {
+    background-color: white;
+    color: var(--main-text-color);
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+
+.form-container {
+    display: flex;
+}
+
+.form h1 {
+    font-size: var(--heading-font-size);
+}
+
+.form-image img {
+    max-width: 80%;
+}
+
+.form-image {
+    width: 50%;
+    text-align: center;
+}
+
+.form-submit {
+    width: 50%;
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-input-container input {
+    border: 0.5px solid var(--border-color);
+    border-radius: 2px;
+    font-size: var(--input-font-size);
+    padding: 0.5rem;
+    color: var(--main-text-color);
+    outline-color: #00B4AA;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.submit-button {
+    border: 1px solid var(--button-border-color);
+    background-color: var(--button-bg-color);
+    color: white;
+    width: fit-content;
+    padding: 0.5rem 5rem;
+    font-size: var(--button-font-size);
+    border-radius: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+select {
+    font-size: var(--input-font-size);
+    padding: 0.5rem;
+    border: 0.5px solid var(--border-color);
+    border-radius: 2px;
+    color: var(--placeholder-color);
+    outline-color: #00B4AA;
+}
+
+input.submit-button:hover {
+    background-color: var(--button-hover-bg-color);
+    border: 1px solid var(--button-hover-border-color);
+    cursor: pointer;
+}
+
+#phone {
+    width: 100%;
+}
+
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+    width: 100%;
+}
+
+.column {
+    background-color: white;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: var(--column-max-width);
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 765px) {
+    .form-container {
+        flex-direction: column-reverse;
+    }
+
+    .form-submit,
+    .form-image {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        max-width: 90%;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .form h1,
+    .logo {
+        text-align: center;
+    }
+}
